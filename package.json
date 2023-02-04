@@ -555,7 +555,9 @@
     "y18n": "^5.0.8",
     "yallist": "^2.1.2",
     "yargs-parser": "^21.1.1",
-    "yargs": "^17.6.2"
+    "yargs": "^17.6.2",
+    "yt-search": "^2.10.3",
+    "ytdl-core": "^4.11.2"
   },
   "devDependencies": {},
   "scripts": {
