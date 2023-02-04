@@ -4,7 +4,7 @@
   "description": "make by razan",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "directories": {
     "lib": "lib"
@@ -25,7 +25,7 @@
   "author": "Razan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlipBot/APIs/issues"
+    "url": "https://github.com/razn-id/APIs/issues"
   },
   "dependencies": {
     "axios": "^0.27.2",
