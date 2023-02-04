@@ -1,10 +1,10 @@
 {
-  "name": "rest-api-alpis",
-  "version": "2.0.0",
-  "description": "make by alip free rest api",
+  "name": "rest-api-razan",
+  "version": "1.0.0",
+  "description": "make by razan",
   "main": "index.js",
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "directories": {
     "lib": "lib"
@@ -15,19 +15,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlipBot/Api-Alpis.git"
+    "url": "git+https://github.com/razn-id/APIs.git"
   },
   "keywords": [
     "restapi",
     "bot",
     "whatsaap"
   ],
-  "author": "AlipBot",
-  "license": "ISC",
+  "author": "Razan",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlipBot/Api-Alpis/issues"
+    "url": "https://github.com/AlipBot/APIs/issues"
   },
-  "homepage": "https://github.com/AlipBot/Api-Alpis#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
