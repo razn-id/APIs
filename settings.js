@@ -3,23 +3,22 @@ require("dotenv").config();
 //_______________________ ┏  Main Setting  ┓ _______________________\\
 
 creator = "乂Razan乂"; // Nama
-port = 2009; //port host
-LimitApikey = 200; // Limit Apikey default
+port = process.env.PORT //port host
+LimitApikey = process.env.limitkey // Limit Apikey default
 
 //___________ ┏  Database Mongodb Setting  ┓ ___________\\
 
-keymongodb =
-  "mongodb+srv://razan123:razanganteng123@data-razanapi.9xldjue.mongodb.net/?retryWrites=true&w=majority"; //example "mongodb+srv://user:password@name_database.mongodb.net/?retryWrites=true&w=majority";
+keymongodb = process.env.mongodb //example "mongodb+srv://user:password@name_database.mongodb.net/?retryWrites=true&w=majority";
 
 //___________ ┏  SMTP Setting  ┓ ___________\\
 
 //note service SMTP Gmail Tidak Boleh Send Kat Temp Email Kalau mahu pakai temp email buat di service lain
 usetempemail = false; // kalau true boleh sing up pakai email temp kalau pakai service gmail pakai false je
 servicesmtp = "Zoho"; //Ada gmail ada sendinblue ikut masing2 limit gmail 500 limit sendinblue 300 free. List service smtp : https://nodemailer.com/smtp/well-known/
-sendemail = "noreply@razan.my.id"; //Email SMTP
-fromsendemail = "noreply@razan.my.id"; // From Email SMTP *kalau takde custom email kena sama email dengan Email SMTP
-sendpwmail = "Razanaqila123$$"; // Password Email SMTP
-domain = "localhost"; // domain website tanpa http or https
+sendemail = process.env.sendemail //Email SMTP
+fromsendemail = process.env.fromsendemail // From Email SMTP *kalau takde custom email kena sama email dengan Email SMTP
+sendpwmail = process.env.sendpwemail // Password Email SMTP
+domain = process.env.domain // domain website tanpa http or https
 
 //_______________________ ┏  Apikey  ┓ _______________________\\
 
@@ -67,8 +66,8 @@ apibitly = [
 ];
 
 //APIKEY RECAPTCHA From https://www.google.com/recaptcha/about/ or https://www.google.com/recaptcha/admin  \\
-recaptcha_key_1 = "6LdSIMIiAAAAAOZYCR7tIvReRRwDBqtGMn2rO4eW";
-recaptcha_key_2 = "6LdSIMIiAAAAAPeienkMs0fhP4SGKcHVDDDuDBpc";
+recaptcha_key_1 = process.env.recaptcha_key_1
+recaptcha_key_2 = process.env.recaptcha_key_2
 
 //_______________________ ┏  Loghandler  ┓ _______________________\\
 
